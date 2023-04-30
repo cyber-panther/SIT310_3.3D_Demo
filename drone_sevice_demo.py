@@ -69,7 +69,7 @@ class DroneServer(Node):
 
         now = time.time()
 
-        if (now - timer > 5.0):
+        if (now - timer > 15.0):
             print("\n\nWarning No input for 15 seconds!!! Automatic Call Initiated\n\n")
             self.command_callback()
         
